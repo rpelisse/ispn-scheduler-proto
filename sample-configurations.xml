@@ -6,7 +6,6 @@
    <global/>
 
    <default>
-     <indexing enabled="true" indexLocalOnly="true"/>
      <transaction useEagerLocking="true" transactionMode="TRANSACTIONAL" lockingMode="PESSIMISTIC"/>
    </default>
 
