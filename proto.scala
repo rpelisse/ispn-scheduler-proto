@@ -54,7 +54,7 @@ case class TaskActor(val syncTaskCache:Cache[String,String],val name:String) ext
 object Proto {
   def main(args: Array[String]) {
     println("Starting QuickSell App...")
-    val manager = new DefaultCacheManager("sample-configurations.xml")
+    val manager = new DefaultCacheManager("configurations.xml")
     val syncTaskCache = manager.getCache[String, String]("lockTaskTable")
     val actorSystem = ActorSystem("TaskSystem")
 
